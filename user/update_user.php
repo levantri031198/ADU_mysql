@@ -17,7 +17,7 @@
 <form action="xl_update_user.php" method="POST">
 	<input type="hidden" name="id" value="<?php echo $id;?>">
 	Tên đăng nhập: <input type="text" name="username" value="<?php echo $rs['username'];?>"><br>
-	Mật khẩu: <input type="password" name="pass" value="<?php echo $rs['username'];?>"><br>
+	Mật khẩu: <input type="password" name="pass" value="<?php echo $rs['password'];?>"><br>
 	Email: <input type="text" name="email" value="<?php echo $rs['email'];?>"><br>
 	
 	<input type="submit" value="Cập nhật người dùng">

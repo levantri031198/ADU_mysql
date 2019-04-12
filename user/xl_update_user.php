@@ -1,6 +1,6 @@
 <?php
 	$id = $_POST['id'];
-	$u = $_POST['username'];
+	$u = md5($_POST['username']);
 	$p = $_POST['pass'];
 	$mail = $_POST['email']; 
 

@@ -2,7 +2,7 @@
 	
 
 	$u = $_POST['username'];
-	$p = $_POST['pass'];
+	$p = md5($_POST['pass']);
 	$mail = $_POST['email']; 
 
 

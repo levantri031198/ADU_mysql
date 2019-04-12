@@ -16,6 +16,7 @@
 		<br>
 		<th>Action</th>
 	</tr>
+
 	<?php
 	$i = 1;
 	while ($rs = mysql_fetch_array($sql))
@@ -25,9 +26,10 @@
 		echo "<td>".$rs["username"]. "</td>";
 		echo "<td>*************</td>";
 		echo "<td>".$rs["email"]. "</td>";
-		echo "<td><a href='user/add_user.php'>Thêm</a> | <a href='user/update_user.php?id=".$rs['id']."'>Sửa</a> | <a href='user/delete_user.php?id=".$rs['id']."'>Xóa</a>";
+		echo "<td><a href='user/update_user.php?id=".$rs['id']."'>Sửa</a> | <a href='user/delete_user.php?id=".$rs['id']."'>Xóa</a>";
 		echo "</tr>";
 		$i++;
 	}
 	?>
 </table>
+<a href='user/add_user.php'>Thêm</a>
